@@ -1,0 +1,15 @@
+DataTable Client Side Implementation:
+
+==========================================================================================================================================
+
+Datatable is a jQuery plugin which gives a nice userInterface for the table in html. It has several modes of implementation. 
+= Client Side
+= Server Side.
+
+In the client side, datatable extracts the data from the client side. There will not be any interaction with the database. 
+The data can be defined in the html form itself or other files.
+I have used a serverSide request using ajax to extract the data and populate the table. The next step would to make an ajax request to 
+a .php file that connects to a database and retrives the data and that data is captured through the ajax request and rendered on the user interface.
+
+
+
