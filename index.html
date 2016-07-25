@@ -1,0 +1,47 @@
+<head>
+<title> My Table</title>
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.0.0-rc1.min.js"></script>
+    <script src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script>
+    
+
+    $(document).ready(function(){
+        var table=$('#example').DataTable({
+        "processing": true,
+        "serverSide": true,
+         "ajax": {
+             
+         "url": "http://localhost:9080/dataTable/swethasdatatable/tests/user.php",   
+            "type": "POST"}
+         });
+       
+        });
+    
+    </script>
+</head>
+<body>
+    <table id="example">
+        <thead>
+    <tr>
+        <th> messageId</th>
+        <th> from</th>
+        <th> psetup</th>
+        <th> deadline</th>
+        <th> assigned person</th>
+        <th> subject</th>
+        </tr>
+        </thead>
+        
+        <tfoot>
+            <tr>
+        <th> messageId</th>
+        <th> from</th>
+        <th> psetup</th>
+        <th> deadline</th>
+        <th> assigned person</th>
+        <th> subject</th>
+        </tfoot>
+       
+    </table>
+</body>
